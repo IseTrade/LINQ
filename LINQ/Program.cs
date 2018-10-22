@@ -43,12 +43,13 @@ namespace LINQ
                     .Select(grades => Array.ConvertAll(grades, int.Parse))
                     .Select(grades => (grades.Sum() - grades.Min()) / (grades.Count() - 1))
                     .Average();
-        Console.WriteLine(avgGrade);
+                Console.WriteLine(avgGrade);
             }
+            Console.WriteLine("");
 
-    //=============================================================//
-    
-    PrintOutFreq("TERRILL");
+            //=============================================================//
+
+            PrintOutFreq("TERRILL");
     Console.ReadLine();
         }
 
